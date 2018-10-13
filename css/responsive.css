@@ -29,6 +29,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    #nav-main{
+        margin-top: 5px
+    }
     .header_area {
         padding: 0;
     }
@@ -111,6 +114,9 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+    #nav-main{
+        margin-top: 5px
+    }
     .header_area {
         padding: 0;
     }
@@ -246,6 +252,9 @@
     .get-start-area .email {
         max-width: 370px;
     }
+    #nav-main{
+        margin-top: 5px
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -254,5 +263,8 @@
     }
     .get-start-area .email {
         margin-bottom: 0;
+    }
+    #nav-main{
+        margin-top: 5px
     }
 }
