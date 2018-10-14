@@ -342,60 +342,32 @@
                     </div>
                 </div>
             </div>
-
-            <div class="row no-gutters">
-                <div id="preise_vue">
-                    {{ message }}
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <!-- Package Price  -->
-                    <div class="single-price-plan text-center">
-                        <!-- Package Text  -->
-                        <div class="package-plan">
-                            <h5>Hochzeitspaket</h5>
-                            <div class="ca-price d-flex justify-content-center">
-                                <span>€</span>
-                                <h4>29</h4>
+            <div id="preise_vue">
+                <div class="row no-gutters">
+                    <div class="col-12 col-md-6 col-lg-3" v-for="produkt in produkte">
+                        <!-- Package Price  -->
+                        <div class="single-price-plan text-center">
+                            <!-- Package Text  -->
+                            <div class="package-plan">
+                                <h5>{{ produkt.name }}</h5>
+                                <div class="ca-price d-flex justify-content-center">
+                                    <span>€</span>
+                                    <h4>{{ produkt.preis }}</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <!-- Package Price  -->
-                    <div class="single-price-plan text-center">
-                        <!-- Package Text  -->
-                        <div class="package-plan">
-                            <h5>Haarschnitt</h5>
-                            <div class="ca-price d-flex justify-content-center">
-                                <span>€</span>
-                                <h4>28,70</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <!-- Package Price  -->
-                    <div class="single-price-plan text-center">
-                        <!-- Package Text  -->
-                        <div class="package-plan">
-                            <h5>Herrenservice</h5>
-                            <div class="ca-price d-flex justify-content-center">
-                                <span>€</span>
-                                <h4>28,70</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <!-- Package Price  -->
-                    <div class="single-price-plan text-center">
-                        <!-- Package Text  -->
-                        <div class="package-plan">
-                            <h5>Tages Make-up</h5>
-                            <div class="ca-price d-flex justify-content-center">
-                                <span>€</span>
-                                <h4>26</h4>
-                            </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-12">
+                <!-- Package Price  -->
+                <div class="single-price-plan text-center">
+                    <!-- Package Text  -->
+                    <div class="package-plan">
+                        <h5><i class="ti-car" aria-hidden="true"></i> Wegpauschale</h5>
+                        <div class="ca-price d-flex justify-content-center">
+                            <span>€</span>
+                            <h4>nach Vereinbarung</h4>
                         </div>
                     </div>
                 </div>
@@ -473,23 +445,12 @@
     <script src="js/footer-reveal.min.js"></script>
     <!-- Active JS -->
     <script src="js/active.js"></script>
-
+    <!-- Vue JS -->
     <script src="js/vue.js"></script>
-
-    <script>
-        $(function () {
-            var navMain = $("#ca-navbar");
-            navMain.on("click", "a", null, function () {
-                navMain.collapse('hide');
-            });
-        });
-        var preise = new Vue({
-            el: '#preise_vue',
-            data: {
-              message: 'Hello Vue!'
-            }
-          })
-    </script>
+    <!-- Active JS -->
+    <script src="js/produkte.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
