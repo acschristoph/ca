@@ -904,10 +904,9 @@ p {
     color: #e71d6f;
 }
 
-.single-price-plan .plan-button > a {
+.plan-button > a {
     background: #726a84;
-    padding: 10px 0;
-    border-bottom-right-radius: 30px;
+    padding: 10px 8px;
     color: #ffffff;
     font-size: 16px;
     font-weight: 500;
@@ -932,6 +931,16 @@ p {
 .single-price-plan.active .plan-button > a,
 .single-price-plan:hover .plan-button > a {
     background-color: #001b5a;
+}
+
+.plan-button > a {
+    background-color: #001b5a;
+    color: #fff;
+}
+
+.plan-button:hover > a {
+    background-color: #e71d6f;
+    color: #fff;
 }
 
 .single-price-plan.active .package-plan .ca-price > h4,
