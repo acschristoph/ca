@@ -164,13 +164,13 @@
 
     <!-- ***** Cool Facts Area Start ***** -->
     <section class="cool_facts_area clearfix">
-        <div class="container">
+        <div class="container" id="counter_vue">
             <div class="row">
                 <!-- Single Cool Fact-->
                 <div class="col-12 col-md-3 col-lg-3">
                     <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.2s">
                         <div class="counter-area">
-                            <h3><span class="counter">2321</span></h3>
+                            <h3><span class="counter">{{ calculate_clients }}</span></h3>
                         </div>
                         <div class="cool-facts-content">
                             <i class="ion-scissors"></i>
@@ -182,7 +182,7 @@
                 <div class="col-12 col-md-3 col-lg-3">
                     <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.4s">
                         <div class="counter-area">
-                            <h3><span class="counter">120</span></h3>
+                            <h3><span class="counter">{{ calculate_customers }}</span></h3>
                         </div>
                         <div class="cool-facts-content">
                             <i class="ion-happy-outline"></i>
@@ -194,7 +194,7 @@
                 <div class="col-12 col-md-3 col-lg-3">
                     <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.6s">
                         <div class="counter-area">
-                            <h3><span class="counter">40</span></h3>
+                            <h3><span class="counter">{{ calculate_fix_clients }}</span></h3>
                         </div>
                         <div class="cool-facts-content">
                             <i class="ion-person"></i>
@@ -206,7 +206,7 @@
                 <div class="col-12 col-md-3 col-lg-3">
                     <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.8s">
                         <div class="counter-area">
-                            <h3><span class="counter">5</span></h3>
+                            <h3><span class="counter">{{ calculate_years }}</span></h3>
                         </div>
                         <div class="cool-facts-content">
                             <i class="ion-clock"></i>
