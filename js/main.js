@@ -1,4 +1,4 @@
-
+// Nav hide on click event handling
 $(function () {
     var navMain = $("#ca-navbar");
     navMain.on("click", "a", null, function () {
@@ -6,22 +6,23 @@ $(function () {
     });
 });
 
+// Produkte Preise Komponente
 var pvue = new Vue({
     el: '#preise_vue',
     data: {
-        message: 'Hello Vue!',
         produkte: produkte
     }
 })
 
+// Counter Komponente
 var cvue = new Vue({
     el: '#counter_vue',
     data: {
-        frisuren: 2234,
-        customers: 330,
-        clients: 401,
-        start_year: 2012,
-        days_since_start: days_passed(new Date(2012, 1, 1))
+        start_year: counters.start_year,
+        frisuren_per_day: counters.frisuren_per_day,
+        h_frisuren_per_day: counters.h_frisuren_per_day,
+        days_since_start: counters.days_since_start,
+        clients_per_day: counters.clients_per_day
     },
     computed: {
         // a computed getter
@@ -30,24 +31,17 @@ var cvue = new Vue({
           const current = new Date().getFullYear()
           return current - this.start_year
         },
-        calculate_clients: function() {
+        calculate_frisuren: function() {
           console.log(this.days_since_start)
-          return this.days_since_start * 2
+          return Math.round( this.days_since_start * this.frisuren_per_day )
         },
-        calculate_customers: function() {
+        calculate_h_firusren: function() {
             console.log(this.days_since_start)
-            return Math.round( this.days_since_start * 1.05 );
+            return Math.round( this.days_since_start * this.h_frisuren_per_day );
         },
         calculate_fix_clients: function() {
             console.log(this.days_since_start)
-            return Math.round( this.days_since_start * 0.2 );
+            return Math.round( this.days_since_start * this.clients_per_day );
         }
     }
 })
-
-function days_passed(dt) {
-    var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
-    var today = new Date();
-    var secondDate = new Date(dt.getTime());
-    return Math.round(Math.abs((today.getTime() - secondDate.getTime())/(oneDay)));  
-  }
