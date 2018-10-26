@@ -25,11 +25,8 @@ var cvue = new Vue({
         clients_per_day: counters.clients_per_day
     },
     computed: {
-        // a computed getter
         calculate_years: function () {
-          // `this` points to the vm instance
-          const current = new Date().getFullYear()
-          return current - this.start_year
+          return new Date().getFullYear() - this.start_year
         },
         calculate_frisuren: function() {
           console.log(this.days_since_start)
