@@ -734,6 +734,14 @@ p {
     color: #e71d6f;
 }
 
+.call_sub2 {
+    /* margin-top: 67px; */
+    left: 67px;
+    position: absolute;
+    color: rgb(0, 27, 90);
+    font-weight: 700;
+}
+
 
 .video-area .video-play-btn a {
     width: 80px;
