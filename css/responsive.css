@@ -186,7 +186,7 @@
     .video-area {
         border: 10px solid #fff;
         border-radius: 20px;
-        height: 250px;
+        height: 200px;
     }
     .video-area::after {
         top: -10px;

@@ -735,10 +735,10 @@ p {
 }
 
 .call_sub2 {
-    /* margin-top: 67px; */
-    left: 67px;
+    margin-top: 13px;
+    left: 50px;
     position: absolute;
-    color: rgb(0, 27, 90);
+    background-color: #e71d6f;
     font-weight: 700;
 }
 
