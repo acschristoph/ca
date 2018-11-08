@@ -14,6 +14,48 @@ var pvue = new Vue({
     }
 })
 
+// Image Komponente
+var pvue = new Vue({
+    el: '#img_vue',
+    data: {
+        images: bilder_name,
+        dir: bilder_dir
+    },
+
+    created: function () {
+        Vue.nextTick(function () {
+            $(".welcome_slides").owlCarousel({
+                items: 3,
+                loop: true,
+                autoplay: true,
+                smartSpeed: 1500,
+                nav: true,
+                navText: ["<i class='pe-7s-angle-left'</i>", "<i class='pe-7s-angle-right'</i>"]
+            });
+            $(".app_screenshots_slides").owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                smartSpeed: 800,
+                margin: 30,
+                center: true,
+                dots: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    480: {
+                        items: 3
+                    },
+                    992: {
+                        items: 5
+                    }
+                }
+            });
+        }.bind(this));
+    }
+})
+
 // Counter Komponente
 var cvue = new Vue({
     el: '#counter_vue',

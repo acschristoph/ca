@@ -247,93 +247,9 @@
             <div class="row">
                 <div class="col-12">
                     <!-- App Screenshots Slides  -->
-                    <div class="app_screenshots_slides owl-carousel">
-                        <div class="single-shot">
-                            <img src="img/pic-img/1.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/2.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/3.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/4.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/5.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/6.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/7.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/8.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/9.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/10.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/11.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/12.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/13.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/14.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/15.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/16.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/17.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/18.jpeg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/19.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/20.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/21.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/22.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/23.jpeg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/24.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/25.jpeg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/26.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/27.jpeg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/pic-img/28.jpg" alt="">
-                        </div>,
-                        <div class="single-shot">
-                            <img src="img/pic-img/29.jpg" alt="">
+                    <div class="app_screenshots_slides owl-carousel" id="img_vue">
+                        <div class="single-shot" v-for="image in images">
+                            <img :src="dir + image" alt="">
                         </div>
                     </div>
                 </div>
