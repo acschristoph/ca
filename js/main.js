@@ -4,7 +4,27 @@ $(function () {
     navMain.on("click", "a", null, function () {
         navMain.collapse('hide');
     });
+    $('#modal').modal({
+        backdrop: false,
+        show: true
+      })
 });
+
+function get_day_name(){
+    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    var d = new Date(new Date());
+    return days[d.getDay()];
+}
+
+// Weinachten Komponente
+var wvue = new Vue({
+    el: '#weinachten_vue',
+    computed: {
+        get_day_message: function () {
+            return weinachten[get_day_name()]
+        },
+    }
+})
 
 // Produkte Preise Komponente
 var pvue = new Vue({
@@ -15,7 +35,7 @@ var pvue = new Vue({
 })
 
 // Image Komponente
-var pvue = new Vue({
+var ivue = new Vue({
     el: '#img_vue',
     data: {
         images: bilder_name,

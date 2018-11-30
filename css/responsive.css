@@ -26,6 +26,11 @@
     .header_area.sticky .menu_area #nav .nav-link {
         padding: 23px 7.5px;
     }
+    .modal-content {
+        width:50%;
+        height:inherit;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -110,6 +115,12 @@
     .clients-feedback-area .slick-slide.slick-current img {
         width: 90px !important;
         height: 90px !important;
+    }
+
+    .modal-content {
+        width:70%;
+        height:inherit;
+        margin: 0 auto;
     }
 }
 
@@ -230,6 +241,12 @@
     .cool_facts_area .col-12:last-of-type .single-cool-fact {
         margin-bottom: 0;
     }
+
+    .modal-content {
+        width:90%;
+        height:inherit;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -255,6 +272,11 @@
     #nav-main{
         margin-top: 5px
     }
+    .modal-content {
+        width:80%;
+        height:inherit;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -266,5 +288,10 @@
     }
     #nav-main{
         margin-top: 5px
+    }
+    .modal-content {
+        width:80%;
+        height:inherit;
+        margin: 0 auto;
     }
 }

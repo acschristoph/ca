@@ -20,6 +20,17 @@ const counters = {
     days_since_start: days_passed(new Date(start_year, start_mon, start_day))
 }
 
+// Counters config
+const weinachten = {
+    Monday: "Augenservice gratis",
+    Tuesday: "Kopfmassage gratis",
+    Wednesday: "5€ Rabatt",
+    Thursday: "15% auf Farbbehandlungen",
+    Friday: "10% auf Make-up",
+    Saturday: "10% auf Stecken",
+    Sunday: "10€ Rabatt",
+}
+
 // Days counter function
 function days_passed(dt) {
     var oneDay = 24*60*60*1000;
