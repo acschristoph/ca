@@ -22,13 +22,13 @@ const counters = {
 
 // Counters config
 const weinachten = {
-    Monday: "Augenservice gratis",
-    Tuesday: "Kopfmassage gratis",
-    Wednesday: "5€ Rabatt",
-    Thursday: "15% auf Farbbehandlungen",
-    Friday: "10% auf Make-up",
-    Saturday: "10% auf Stecken",
-    Sunday: "10€ Rabatt",
+    Monday: "Augenservice Gratis",
+    Tuesday: "Kopfmassage Gratis",
+    Wednesday: "5€ Rabatt auf Dienstleistungen",
+    Thursday: "15% Rabatt auf Farbbehandlungen",
+    Friday: "10% Rabatt auf Make-up",
+    Saturday: "10% Rabatt auf Steckfrisuren",
+    Sunday: "10€ Rabatt auf Dienstleistungen",
 }
 
 // Days counter function
